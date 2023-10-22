@@ -12,11 +12,7 @@ const About = () => {
         <div className=' mt-10'>
             <h2 className='titleBackground border border-b-[#00df9a] w-fit border-t-0 border-l-0 border-r-0'>ABOUT ME</h2>
         </div>
-        {/* <div className='flex flex-col flex-wrap'>
-            <p className=' mx-32 mt-20 font-bold text-3xl'>I'm <span className='text-[#00df9a]'>Aaditya Malani</span> ,a Web Developer</p>
-            <p className='my-4 w-[120vh] mx-32'> I am an accomplished web developer with a proven track record of creating outstanding digital experiences. With a keen eye for design and a deep understanding of web technologies, I consistently deliver websites that not only look visually striking but also function seamlessly.My proficiency in front-end technologies like HTML, CSS, and JavaScript, coupled with my expertise in popular frameworks and libraries, allows me to build user-friendly and responsive web applications.   </p>
-            <p className='w-[120vh] mx-32'> With a commitment to optimizing website performance and adhering to accessibility standards, I consistently produce websites that cater to a diverse audience and load quickly, providing visitors with a memorable and user-friendly experience.</p>
-        </div> */}
+        
         <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
 
         <p className="text-xl mt-10">

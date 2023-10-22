@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home__Container {
+    background-image: url("../src/assets/intro-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    /* margin-top: 80px; */
+    /* color: var(--white__color); */
+}
+.home__bgLayer {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+h2.titleBackground {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-size: 95px; */
+    font-size: calc(50px + 3vw);
+    font-weight: 600;
+    color: #dde2e3bb;
+}

@@ -20,7 +20,7 @@ const Navbar = () => {
         </ul>
         <div>
          <ul className='hidden text-white font-medium text-sm font-sans md:flex'>
-        <li className="pt-3 px-2 cursor-pointer hover:text-[#00df9a] duration-300 hover:scale-105"><a href="https://github.com/aadii1502"><FaGithub size={20}/></a></li>
+        <li className="pt-3 px-2 cursor-pointer hover:text-[#00df9a] duration-300 hover:scale-105"><a href="https://github.com/aadii1502" target='_blank'><FaGithub size={20}/></a></li>
         <li className="pt-3 px-2 cursor-pointer hover:text-[#00df9a] duration-300 hover:scale-105"><FaLinkedin size={20}/></li>
         <li className="pt-2 px-2 cursor-pointer hover:text-[#00df9a] duration-300 hover:scale-105"><HiOutlineMail size={27}/></li>
         </ul>

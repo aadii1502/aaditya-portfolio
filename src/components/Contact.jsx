@@ -1,5 +1,5 @@
 import React ,{useState} from "react";
-
+import validator from "validator";
 const Contact = () => {
 
   const [data, setData] = useState({
@@ -8,6 +8,17 @@ const Contact = () => {
     message: "",
   })
   const { name, email, message } = data;
+
+  const [emailError, setEmailError] = useState('') 
+  const validateEmail = (e) => { 
+    var email = e.target.value 
+  
+    if (validator.isEmail(email)) { 
+      setEmailError('') 
+    } else { 
+      setEmailError('Please enter a valid email!') 
+    } 
+  } 
 
 
   const handleSubmit = async e => {
@@ -28,7 +39,7 @@ const Contact = () => {
   }
 
   const handleChange = e =>
-  setData({ ...data, [e.target.name]: e.target.value })
+  setData({ ...data, [e.target.name] : e.target.value })
 
   return (
     <div id="contact"
@@ -54,14 +65,20 @@ const Contact = () => {
               onChange={handleChange}
               onSubmit={""}
             />
+            <pre>
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="mt-2 w-full mr-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
               value={email}
-              onChange={handleChange}
-            />
+              onChange={(e) => {
+                handleChange(e);
+                validateEmail(e);
+              }}
+              />
+            <p className=" my-2 text-white font-serif font-bold bg-red-600 px-2 rounded-md">{emailError}</p>
+            </pre>
             <textarea
               name="message"
               placeholder="Enter your message"
